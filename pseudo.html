@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        /* h1{
+            color: red;
+        }
+
+        .Unic:hover{
+            color: rgb(10, 129, 129);
+            font-size: 25px;
+            background-color: rgb(1, 26, 26);
+        }
+
+        input:focus{
+            color: red;
+            font-weight: 700;
+            font-size: 25px;
+        }
+
+        p:nth-child(2n+1){
+            background-color: blue;
+        }
+
+        a:fullscreen{
+            color: rgb(243, 19, 19);
+        } */
+
+        h1::before{
+            content: "I am OK";
+            color: aquamarine;
+            font-size: 20px;
+            background-color: black;
+        }
+
+        .Unic::after{
+            content: "Easy";
+        }
+
+
+        p::before {
+         counter-increment: ❤️;   
+        content: "❤️ " counter(❤️) ":";  
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1> Peroso 1</h1>
+    <h1> Peroso 2</h1>
+    <h1 class="Unic"> Peroso 3</h1>
+    <input type="text" name="email"> 
+    <br><br>
+    <input type="text" name="password">
+
+    <ul>
+        <p>Apa</p>
+        <p>Japa</p>
+        <p>Sadia</p>
+        <p>Dapa</p>
+        <p>Jalaia</p>
+        <p>Falaia</p>
+        <p>Kapa</p>
+    </ul>
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">Cpckme</a> 
+    <br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">Mozila</a>
+    
+</body>
+</html>
